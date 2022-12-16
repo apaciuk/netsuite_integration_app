@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+  <boilerjuice>
+  <sid>244</sid>
+  <pw>8nngdioHrvaqQRrR</pw>
+  <order>
+    <id>3686468</id>
+    <status>3</status>
+    <scheduledDeliveryDate>20221201</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686540</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686467</id>
+    <status>0</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686464</id>
+    <status>1</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686457</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686531</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686483</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686480</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686478</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686469</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686454</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686453</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686451</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686449</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686542</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686466</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686448</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686426</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686425</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686424</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+  <order>
+    <id>3686422</id>
+    <status>6</status>
+    <scheduledDeliveryDate>20001111</scheduledDeliveryDate>
+    <deliveryFailure>0</deliveryFailure>
+  </order>
+
+</boilerjuice>
+Status: WARNING<br/>
+XML loaded into DOM object at 0.1176 seconds.<br/>
+sid (244) extracted from XML at 0.1177 seconds.<br/>
+pw extracted from XML at 0.1177 seconds.<br/>
+Supplier name is New Era Fuels Ltd.<br/>
+Test mode is disabled.<br/>
+18 orders extracted from XML, looping through orders:<br/><br/>
+Warning: order ID 2 doesn't exist, order ignored at 0.1902 seconds.<br/>
+Warning: order ID 12 doesn't exist, order ignored at 0.1906 seconds.<br/>
+Warning: order ID 3 doesn't exist, order ignored at 0.1909 seconds.<br/>
+Warning: order ID 4 doesn't exist, order ignored at 0.1912 seconds.<br/>
+Warning: order ID 5 doesn't exist, order ignored at 0.1915 seconds.<br/>
+Warning: order ID 6 doesn't exist, order ignored at 0.1926 seconds.<br/>
+Warning: order ID 7 doesn't exist, order ignored at 0.1929 seconds.<br/>
+Warning: order ID 13 doesn't exist, order ignored at 0.1932 seconds.<br/>
+Warning: order ID 14 doesn't exist, order ignored at 0.1936 seconds.<br/>
+Warning: order ID 15 doesn't exist, order ignored at 0.1948 seconds.<br/>
+Warning: order ID 16 doesn't exist, order ignored at 0.1951 seconds.<br/>
+Warning: order ID 1 doesn't exist, order ignored at 0.1955 seconds.<br/>
+Warning: order ID 10 doesn't exist, order ignored at 0.1959 seconds.<br/>
+Warning: order ID 17 doesn't exist, order ignored at 0.1962 seconds.<br/>
+Warning: order ID 18 doesn't exist, order ignored at 0.1965 seconds.<br/>
+Warning: order ID 19 doesn't exist, order ignored at 0.1968 seconds.<br/>
+Warning: order ID 20 doesn't exist, order ignored at 0.1971 seconds.<br/>
+Warning: order ID 21 doesn't exist, order ignored at 0.1974 seconds.<br/>
+Script ends at 0.1975 seconds.<br/><br/>
+200
+<?xml version="1.0"?>
+  <boilerjuice>
+  <sid>244</sid>
+  <pw>8nngdioHrvaqQRrR</pw>
+  <order>
+    <id>2</id>
+    <volume_delivered>0</volume_delivered>
+    <price>80.58</price>
+    <del_date>20221206</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>12</id>
+    <volume_delivered>0</volume_delivered>
+    <price>80.7</price>
+    <del_date>20221119</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>3</id>
+    <volume_delivered>0</volume_delivered>
+    <price>79.27</price>
+    <del_date>20221130</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>4</id>
+    <volume_delivered>0</volume_delivered>
+    <price>79.3</price>
+    <del_date>20221123</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>5</id>
+    <volume_delivered>0</volume_delivered>
+    <price>83.6</price>
+    <del_date>20221123</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>6</id>
+    <volume_delivered>0</volume_delivered>
+    <price>80.7</price>
+    <del_date>20221119</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>7</id>
+    <volume_delivered>0</volume_delivered>
+    <price>89.82</price>
+    <del_date>20221122</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>13</id>
+    <volume_delivered>0</volume_delivered>
+    <price>83.5</price>
+    <del_date>20221201</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>14</id>
+    <volume_delivered>0</volume_delivered>
+    <price>83.5</price>
+    <del_date>20221201</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>15</id>
+    <volume_delivered>0</volume_delivered>
+    <price>86.04</price>
+    <del_date>20221114</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>16</id>
+    <volume_delivered>0</volume_delivered>
+    <price>80.8</price>
+    <del_date>20221117</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>1</id>
+    <volume_delivered>0</volume_delivered>
+    <price>86.2</price>
+    <del_date>20221205</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>10</id>
+    <volume_delivered>0</volume_delivered>
+    <price>86.2</price>
+    <del_date>20221118</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>17</id>
+    <volume_delivered>0</volume_delivered>
+    <price>83.6</price>
+    <del_date>20221116</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>18</id>
+    <volume_delivered>0</volume_delivered>
+    <price>86.2</price>
+    <del_date>20221111</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>19</id>
+    <volume_delivered>0</volume_delivered>
+    <price>86.2</price>
+    <del_date>20221111</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>20</id>
+    <volume_delivered>0</volume_delivered>
+    <price>86.32</price>
+    <del_date>20221111</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+  <order>
+    <id>21</id>
+    <volume_delivered>0</volume_delivered>
+    <price>79.3</price>
+    <del_date>20221104</del_date>
+    <deliveryTicketNumber></deliveryTicketNumber>
+  </order>
+
+</boilerjuice>
+

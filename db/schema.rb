@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_16_112239) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_16_122726) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -72,6 +72,25 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_16_112239) do
     t.datetime "updated_at", null: false
     t.index ["read_at"], name: "index_notifications_on_read_at"
     t.index ["recipient_type", "recipient_id"], name: "index_notifications_on_recipient"
+  end
+
+  create_table "sales_orders", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.integer "order_status", null: false
+    t.integer "order_number", null: false
+    t.integer "customer_id", null: false
+    t.integer "sales_order_internal_id"
+    t.datetime "check_date", default: -> { "CURRENT_TIMESTAMP" }, null: false
+    t.datetime "last_check_date", default: -> { "CURRENT_TIMESTAMP" }, null: false
+    t.datetime "order_date", default: -> { "CURRENT_TIMESTAMP" }, null: false
+    t.datetime "ship_date", default: -> { "CURRENT_TIMESTAMP" }, null: false
+    t.datetime "delivery_date"
+    t.datetime "delivered_date"
+    t.float "price", default: 0.0, null: false
+    t.float "quantity_fulfilled", default: 0.0, null: false
+    t.integer "ns_status", default: 0, null: false
+    t.integer "bo_status", default: 0, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "services", force: :cascade do |t|

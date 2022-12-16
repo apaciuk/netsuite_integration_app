@@ -1,0 +1,180 @@
+  
+       [
+        {
+          "attributes": {
+            "item": {
+              "internal_id": "110",
+              "external_id": null,
+              "type": null,
+              "attributes": {
+                "name": "000002 Kerosene (UN1223) 3.PGIII (D/E)"
+              }
+            },
+            "expand_item_group": false,
+            "quantity": "1000.0",
+            "units": {
+              "internal_id": "1",
+              "external_id": null,
+              "type": null,
+              "attributes": {
+                "name": "ltr"
+              }
+            },
+            "description": "Kerosene (UN1223) 3.PGIII (D/E)",
+            "price": {
+              "internal_id": "-1",
+              "external_id": null,
+              "type": null,
+              "attributes": {}
+            },
+            "rate": "0.81",
+            "amount": "810.0",
+            "is_closed": false,
+            "gross_amt": "850.5",
+            "line": "1",
+            "cost_estimate_type": "_averageCost",
+            "cost_estimate": "900.79",
+            "quantity_back_ordered": "0.0",
+            "quantity_billed": "0.0",
+            "quantity_committed": "1000.0",
+            "quantity_fulfilled": "0.0",
+            "tax1_amt": "40.5",
+            "tax_code": {
+              "internal_id": "2214",
+              "external_id": null,
+              "type": null,
+              "attributes": {
+                "name": "VAT:RDR-5%"
+              }
+            },
+            "tax_rate1": "5.0",
+            "custom_field_list": {
+              "custom_fields": [
+                {
+                  "script_id": "custcol_nef_unit_cost",
+                  "internal_id": "2681",
+                  "type": "platformCore:DoubleCustomFieldRef",
+                  "attributes": {
+                    "value": "0.9005"
+                  }
+                },
+                {
+                  "script_id": "custcol_nef_history",
+                  "internal_id": "2686",
+                  "type": "platformCore:BooleanCustomFieldRef",
+                  "attributes": {
+                    "value": false
+                  }
+                },
+                {
+                  "script_id": "custcol_nef_unit_profit",
+                  "internal_id": "2718",
+                  "type": "platformCore:DoubleCustomFieldRef",
+                  "attributes": {
+                    "value": "-90.5"
+                  }
+                },
+                {
+                  "script_id": "custcol_5892_eutriangulation",
+                  "internal_id": "596",
+                  "type": "platformCore:BooleanCustomFieldRef",
+                  "attributes": {
+                    "value": false
+                  }
+                },
+                {
+                  "script_id": "custcol_nef_litre_equivalency",
+                  "internal_id": "2590",
+                  "type": "platformCore:LongCustomFieldRef",
+                  "attributes": {
+                    "value": "1"
+                  }
+                },
+                {
+                  "script_id": "custcol_nef_vatqualifying",
+                  "internal_id": "2591",
+                  "type": "platformCore:BooleanCustomFieldRef",
+                  "attributes": {
+                    "value": true
+                  }
+                },
+                {
+                  "script_id": "custcol_nef_margin_adjust",
+                  "internal_id": "2679",
+                  "type": "platformCore:DoubleCustomFieldRef",
+                  "attributes": {
+                    "value": "0.005"
+                  }
+                },
+                {
+                  "script_id": "custcol_nef_standard_cost",
+                  "internal_id": "2680",
+                  "type": "platformCore:DoubleCustomFieldRef",
+                  "attributes": {
+                    "value": "0.8955"
+                  }
+                },
+                {
+                  "script_id": "custcol_nef_standard_cost_1",
+                  "internal_id": "2682",
+                  "type": "platformCore:BooleanCustomFieldRef",
+                  "attributes": {
+                    "value": true
+                  }
+                },
+                {
+                  "script_id": "custcol_nef_un_no",
+                  "internal_id": "2688",
+                  "type": "platformCore:StringCustomFieldRef",
+                  "attributes": {
+                    "value": "UN1223 3.PGIII (D/E) NOT TO BE USED AS ROAD FUEL"
+                  }
+                },
+                {
+                  "script_id": "custcol_nef_item_weight",
+                  "internal_id": "2689",
+                  "type": "platformCore:DoubleCustomFieldRef",
+                  "attributes": {
+                    "value": "0.82"
+                  }
+                },
+                {
+                  "script_id": "custcol_nef_pack_size",
+                  "internal_id": "2852",
+                  "type": "platformCore:SelectCustomFieldRef",
+                  "attributes": {
+                    "value": {
+                      "internal_id": "39",
+                      "external_id": null,
+                      "type_id": "382",
+                      "attributes": {
+                        "name": "Bulk LTR"
+                      }
+                    }
+                  }
+                },
+                {
+                  "script_id": "custcol_nef_original_ord_qty",
+                  "internal_id": "2940",
+                  "type": "platformCore:DoubleCustomFieldRef",
+                  "attributes": {
+                    "value": "1000.0"
+                  }
+                },
+                {
+                  "script_id": "custcol_nef_original_sales_rate",
+                  "internal_id": "2941",
+                  "type": "platformCore:DoubleCustomFieldRef",
+                  "attributes": {
+                    "value": "0.81"
+                  }
+                },
+                {
+                  "script_id": "custcol_nef_commodity_code",
+                  "internal_id": "3114",
+                  "type": "platformCore:StringCustomFieldRef",
+                  "attributes": {
+                    "value": "2710192500"
+                  }
+                }
+              ],

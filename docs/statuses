@@ -1,0 +1,24 @@
+	status
+	1 = Awaiting processing
+	2 = Delivery scheduled
+	3 = On load
+	4 = Delivered (via In Cab computer)
+	5 = Not delivered (via In Cab computer)
+	6 = Confirmed delivered
+	7 = Late
+
+	earliestDate/latestDate/scheduledDeliveryDate
+	yyyymmdd [format]
+
+	scheduledDeliveryTime
+	hhmm [format]
+
+    deliverySequence
+    1 of 8 [format]
+
+	delivery failure
+	0 = no
+	1 = yes
+
+	deliveryFailureReason
+	free text

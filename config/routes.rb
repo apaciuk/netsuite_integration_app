@@ -3,9 +3,17 @@ require 'sidekiq/web'
 Rails.application.routes.draw do
   get '/privacy', to: 'home#privacy'
   get '/terms', to: 'home#terms'
- authenticate :user, lambda { |u| u.admin? } do
-   mount Sidekiq::Web => '/sidekiq'
+  authenticate :user, lambda { |u| u.admin? } do
+  mount Sidekiq::Web => '/sidekiq'
+    namespace :api do
+    namespace :v1 do
+        namespace :backoffice do
+        get '/', to: 'backoffice#index'
+      end
+    end
+  end
 end
+
 
   resources :notifications, only: [:index]
   resources :announcements, only: [:index]

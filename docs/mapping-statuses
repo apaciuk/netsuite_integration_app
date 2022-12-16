@@ -1,0 +1,13 @@
+pendingFulfillment (app 1)  wo delivery_dates = 1
+
+pendingFulfillment w delivery_date = 3
+
+pendingBilling or partially Fulfilled/pendingBilling = 6
+
+pendingFulfillment w status missed = 5
+
+
+
+
+
+

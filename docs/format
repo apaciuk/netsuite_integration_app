@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<supplier>
+	<sid>344</sid>
+	<pw>4657gdhtey6</pw>
+	<order>
+       <id>3686414</id>
+      <volume_delivered>480</volume_delivered>
+	</order>
+	<order>
+       <id>3686425</id>
+      <volume_delivered>480</volume_delivered>
+	</order>
+	<order>
+       <id>3686443</id>
+      <volume_delivered>480</volume_delivered>
+	</order>
+</supplier>
