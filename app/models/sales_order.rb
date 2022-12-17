@@ -26,6 +26,6 @@ class SalesOrder < ApplicationRecord
         processing: 1,
         shipped: 2,
         delivered: 3,
-        cancelled: 4
+        closed: 4
     }
 end

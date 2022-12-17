@@ -1,5 +1,5 @@
-module Apis
+module Api
   def self.table_name_prefix
-    "apis_"
+    "api_"
   end
 end
