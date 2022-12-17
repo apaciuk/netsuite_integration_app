@@ -131,7 +131,7 @@ class UpdateAllService < ApplicationService
         @xml_string = (PREFIX + orders_xml + SUFFIX).freeze
         conn = CONNECTION.call
         response = conn.post do |req|
-            req.url '/api/v1/orders'
+            req.url '/api/v1/backoffice/orders'
             req.headers['Content-Type'] = 'form/multipart'
             req.body = @xml_string
         end
