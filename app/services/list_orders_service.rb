@@ -35,7 +35,7 @@ class ListOrdersService < ApplicationService
             }
         end
         list_orders = JSON.parse(list_orders.to_json).to_s.gsub('=>', ':')
-        list_orders
+        puts "list_orders: #{list_orders}"
     end
 end
     

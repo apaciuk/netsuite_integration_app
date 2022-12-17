@@ -36,6 +36,9 @@ gem 'grape-swagger'
 gem 'grape-swagger-rails'
 gem 'grape_logging'
 gem 'grape_on_rails_routes'
+gem 'faraday'
+gem 'faraday_middleware'
+gem 'faraaday-multipart'
 
 # Use Redis adapter to run Action Cable in production
 gem "redis", "~> 4.0"

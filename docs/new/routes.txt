@@ -1,0 +1,84 @@
+                       api_v1_backoffice GET    /api/v1/backoffice(.:format)                                                                      api/v1/backoffice/backoffice#index
+                 api_v1_backoffice_login POST   /api/v1/backoffice/login(.:format)                                                                api/v1/backoffice/sessions#create
+                api_v1_backoffice_logout DELETE /api/v1/backoffice/logout(.:format)                                                               api/v1/backoffice/sessions#destroy
+                api_v1_backoffice_admins GET    /api/v1/backoffice/admins(.:format)                                                               api/v1/backoffice/admins#index
+                                         POST   /api/v1/backoffice/admins(.:format)                                                               api/v1/backoffice/admins#create
+                 api_v1_backoffice_admin PATCH  /api/v1/backoffice/admins/:id(.:format)                                                           api/v1/backoffice/admins#update
+                                         PUT    /api/v1/backoffice/admins/:id(.:format)                                                           api/v1/backoffice/admins#update
+                                         DELETE /api/v1/backoffice/admins/:id(.:format)                                                           api/v1/backoffice/admins#destroy
+               api_v1_backoffice_members GET    /api/v1/backoffice/members(.:format)                                                              api/v1/backoffice/members#index
+                                         POST   /api/v1/backoffice/members(.:format)                                                              api/v1/backoffice/members#create
+                api_v1_backoffice_member PATCH  /api/v1/backoffice/members/:id(.:format)                                                          api/v1/backoffice/members#update
+                                         PUT    /api/v1/backoffice/members/:id(.:format)                                                          api/v1/backoffice/members#update
+                                         DELETE /api/v1/backoffice/members/:id(.:format)                                                          api/v1/backoffice/members#destroy
+            api_v1_backoffice_categories GET    /api/v1/backoffice/categories(.:format)                                                           api/v1/backoffice/categories#index
+                                         POST   /api/v1/backoffice/categories(.:format)                                                           api/v1/backoffice/categories#create
+              api_v1_backoffice_category PATCH  /api/v1/backoffice/categories/:id(.:format)                                                       api/v1/backoffice/categories#update
+                                         PUT    /api/v1/backoffice/categories/:id(.:format)                                                       api/v1/backoffice/categories#update
+                                         DELETE /api/v1/backoffice/categories/:id(.:format)                                                       api/v1/backoffice/categories#destroy
+         api_v1_backoffice_subcategories GET    /api/v1/backoffice/subcategories(.:format)                                                        api/v1/backoffice/subcategories#index
+                                         POST   /api/v1/backoffice/subcategories(.:format)                                                        api/v1/backoffice/subcategories#create
+           api_v1_backoffice_subcategory PATCH  /api/v1/backoffice/subcategories/:id(.:format)                                                    api/v1/backoffice/subcategories#update
+                                         PUT    /api/v1/backoffice/subcategories/:id(.:format)                                                    api/v1/backoffice/subcategories#update
+                                         DELETE /api/v1/backoffice/subcategories/:id(.:format)                                                    api/v1/backoffice/subcategories#destroy
+              api_v1_backoffice_products GET    /api/v1/backoffice/products(.:format)                                                             api/v1/backoffice/products#index
+                                         POST   /api/v1/backoffice/products(.:format)                                                             api/v1/backoffice/products#create
+               api_v1_backoffice_product PATCH  /api/v1/backoffice/products/:id(.:format)                                                         api/v1/backoffice/products#update
+                                         PUT    /api/v1/backoffice/products/:id(.:format)                                                         api/v1/backoffice/products#update
+                                         DELETE /api/v1/backoffice/products/:id(.:format)                                                         api/v1/backoffice/products#destroy
+                api_v1_backoffice_orders GET    /api/v1/backoffice/orders(.:format)                                                               api/v1/backoffice/orders#index
+                                         POST   /api/v1/backoffice/orders(.:format)                                                               api/v1/backoffice/orders#create
+                 api_v1_backoffice_order PATCH  /api/v1/backoffice/orders/:id(.:format)                                                           api/v1/backoffice/orders#update
+                                         PUT    /api/v1/backoffice/orders/:id(.:format)                                                           api/v1/backoffice/orders#update
+                                         DELETE /api/v1/backoffice/orders/:id(.:format)                                                           api/v1/backoffice/orders#destroy
+           api_v1_backoffice_order_items GET    /api/v1/backoffice/order_items(.:format)                                                          api/v1/backoffice/order_items#index
+                                         POST   /api/v1/backoffice/order_items(.:format)                                                          api/v1/backoffice/order_items#create
+            api_v1_backoffice_order_item PATCH  /api/v1/backoffice/order_items/:id(.:format)                                                      api/v1/backoffice/order_items#update
+                                         PUT    /api/v1/backoffice/order_items/:id(.:format)                                                      api/v1/backoffice/order_items#update
+                                         DELETE /api/v1/backoffice/order_items/:id(.:format)                                                      api/v1/backoffice/order_items#destroy
+              api_v1_backoffice_payments GET    /api/v1/backoffice/payments(.:format)                                                             api/v1/backoffice/payments#index
+                                         POST   /api/v1/backoffice/payments(.:format)                                                             api/v1/backoffice/payments#create
+               api_v1_backoffice_payment PATCH  /api/v1/backoffice/payments/:id(.:format)                                                         api/v1/backoffice/payments#update
+                                         PUT    /api/v1/backoffice/payments/:id(.:format)                                                         api/v1/backoffice/payments#update
+                                         DELETE /api/v1/backoffice/payments/:id(.:format)                                                         api/v1/backoffice/payments#destroy
+         api_v1_backoffice_payment_types GET    /api/v1/backoffice/payment_types(.:format)                                                        api/v1/backoffice/payment_types#index
+                                         POST   /api/v1/backoffice/payment_types(.:format)                                                        api/v1/backoffice/payment_types#create
+          api_v1_backoffice_payment_type PATCH  /api/v1/backoffice/payment_types/:id(.:format)                                                    api/v1/backoffice/payment_types#update
+                                         PUT    /api/v1/backoffice/payment_types/:id(.:format)                                                    api/v1/backoffice/payment_types#update
+                                         DELETE /api/v1/backoffice/payment_types/:id(.:format)                                                    api/v1/backoffice/payment_types#destroy
+    api_v1_backoffice_shipping_companies GET    /api/v1/backoffice/shipping_companies(.:format)                                                   api/v1/backoffice/shipping_companies#index
+                                         POST   /api/v1/backoffice/shipping_companies(.:format)                                                   api/v1/backoffice/shipping_companies#create
+      api_v1_backoffice_shipping_company PATCH  /api/v1/backoffice/shipping_companies/:id(.:format)                                               api/v1/backoffice/shipping_companies#update
+                                         PUT    /api/v1/backoffice/shipping_companies/:id(.:format)                                               api/v1/backoffice/shipping_companies#update
+                                         DELETE /api/v1/backoffice/shipping_companies/:id(.:format)                                               api/v1/backoffice/shipping_companies#destroy
+       api_v1_backoffice_shipping_labels GET    /api/v1/backoffice/shipping_labels(.:format)                                                      api/v1/backoffice/shipping_labels#index
+                                         POST   /api/v1/backoffice/shipping_labels(.:format)                                                      api/v1/backoffice/shipping_labels#create
+        api_v1_backoffice_shipping_label PATCH  /api/v1/backoffice/shipping_labels/:id(.:format)                                                  api/v1/backoffice/shipping_labels#update
+                                         PUT    /api/v1/backoffice/shipping_labels/:id(.:format)                                                  api/v1/backoffice/shipping_labels#update
+                                         DELETE /api/v1/backoffice/shipping_labels/:id(.:format)                                                  api/v1/backoffice/shipping_labels#destroy
+     api_v1_backoffice_shipping_statuses GET    /api/v1/backoffice/shipping_statuses(.:format)                                                    api/v1/backoffice/shipping_statuses#index
+                                         POST   /api/v1/backoffice/shipping_statuses(.:format)                                                    api/v1/backoffice/shipping_statuses#create
+       api_v1_backoffice_shipping_status PATCH  /api/v1/backoffice/shipping_statuses/:id(.:format)                                                api/v1/backoffice/shipping_statuses#update
+                                         PUT    /api/v1/backoffice/shipping_statuses/:id(.:format)                                                api/v1/backoffice/shipping_statuses#update
+                                         DELETE /api/v1/backoffice/shipping_statuses/:id(.:format)                                                api/v1/backoffice/shipping_statuses#destroy
+        api_v1_backoffice_shipping_types GET    /api/v1/backoffice/shipping_types(.:format)                                                       api/v1/backoffice/shipping_types#index
+                                         POST   /api/v1/backoffice/shipping_types(.:format)                                                       api/v1/backoffice/shipping_types#create
+         api_v1_backoffice_shipping_type PATCH  /api/v1/backoffice/shipping_types/:id(.:format)                                                   api/v1/backoffice/shipping_types#update
+                                         PUT    /api/v1/backoffice/shipping_types/:id(.:format)                                                   api/v1/backoffice/shipping_types#update
+                                         DELETE /api/v1/backoffice/shipping_types/:id(.:format)                                                   api/v1/backoffice/shipping_types#destroy
+                 api_v1_backoffice_users GET    /api/v1/backoffice/users(.:format)                                                                api/v1/backoffice/users#index
+                                         POST   /api/v1/backoffice/users(.:format)                                                                api/v1/backoffice/users#create
+                  api_v1_backoffice_user PATCH  /api/v1/backoffice/users/:id(.:format)                                                            api/v1/backoffice/users#update
+                                         PUT    /api/v1/backoffice/users/:id(.:format)                                                            api/v1/backoffice/users#update
+                                         DELETE /api/v1/backoffice/users/:id(.:format)                                                            api/v1/backoffice/users#destroy
+         api_v1_backoffice_user_statuses GET    /api/v1/backoffice/user_statuses(.:format)                                                        api/v1/backoffice/user_statuses#index
+                                         POST   /api/v1/backoffice/user_statuses(.:format)                                                        api/v1/backoffice/user_statuses#create
+           api_v1_backoffice_user_status PATCH  /api/v1/backoffice/user_statuses/:id(.:format)                                                    api/v1/backoffice/user_statuses#update
+                                         PUT    /api/v1/backoffice/user_statuses/:id(.:format)                                                    api/v1/backoffice/user_statuses#update
+                                         DELETE /api/v1/backoffice/user_statuses/:id(.:format)                                                    api/v1/backoffice/user_statuses#destroy
+            api_v1_backoffice_user_types GET    /api/v1/backoffice/user_types(.:format)                                                           api/v1/backoffice/user_types#index
+                                         POST   /api/v1/backoffice/user_types(.:format)                                                           api/v1/backoffice/user_types#create
+             api_v1_backoffice_user_type PATCH  /api/v1/backoffice/user_types/:id(.:format)                                                       api/v1/backoffice/user_types#update
+                                         PUT    /api/v1/backoffice/user_types/:id(.:format)                                                       api/v1/backoffice/user_types#update
+                                         DELETE /api/v1/backoffice/user_types/:id(.:format)                                                       api/v1/backoffice/user_types#destroy
+                                         GET    /api/v1/backoffice(.:format)                                                                      api/v1/backoffice#index
