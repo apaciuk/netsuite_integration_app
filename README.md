@@ -1,8 +1,10 @@
-# jumpstart-custom
+# netsuite_integration
 
-## Getting Started
+- 3 way integration update Netsuite andd an external order system, with attributes/data kept/pushed both ways, in internal app DB.
 
-Jumpstart Custom is a Rails template, so you pass it in as an option when creating a new app.
+Current open orders taken from internal db, compared in Netsuite, last_modified_date, data pulled from Netsuite and update internal app db.
+Then set bo_statuses in internal app db before processing all open then closed orders into XML format to be pushed to two different bo endpoints in the required XML formatted nodes.
+Uses UUId ids for sales orders.
 
 #### Requirements
 
@@ -94,8 +96,8 @@ After migration field/column added,
 Can be adjusted in application_controler, example below add a github_link
 
 def configure_permitted_parameters
-      devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :avatar, :github_link])
-      devise_parameter_sanitizer.permit(:account_update, keys: [:name, :avatar])
+devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :avatar, :github_link])
+devise_parameter_sanitizer.permit(:account_update, keys: [:name, :avatar])
 end
 
 and add to the create method in onmniauth_controller
