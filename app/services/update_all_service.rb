@@ -85,4 +85,95 @@ class UpdateAllService < ApplicationService
         update.where(order_status: 'processing').where.not(delivery_date: nil).where(delivered_date: nil).where(ns_status: "Missed").update_all(bo_status: 5) # Missed
         update.where.not(quantity_fulfilled: nil).where.not(delivery_date: nil).where.not(delivered_date: nil).where(ns_status: "Complete").update_all(bo_status: 6) # Complete&Delivered
     end
+
+    def process_all_orders
+        orders_xml = []
+        orders = ListStatusService.new.call
+        orders.each do |item|
+            if item['delivery_date'] == nil || item['delivery_date'] == "" || item['delivery_date'] == " "
+                delivery_date = DateTime.parse(item['delivery_date']).strftime('%Y-%m-%d')
+            elsif item['delivered_date'] != nil
+                delivery_date = item['delivered_date']
+            else
+                delivery_date = item['delivery_date']
+            end 
+            orders >> {
+                order_number: item['order_number'],
+                order_status: item['order_status'],
+                orderDate: item['order_date'],
+                shipDate: item['ship_date'],
+                scheduledDate: delivery_date,
+                status: item['bo_status']
+            }
+            orders_xml = orders.to_xml(root: 'orders', skip_types: true, skip_instruct: true, dasherize: false).gsub('<orders>', "").gsub('</orders>', "")
+            update_bo_orders(orders_xml)
+    end 
+
+    def process_closed_orders
+        closed_orders = SalesOrder.where(bo_status: 6).where(ns_status: "Complete").where.not(order_status: "closed"
+        closed_orders.each do |item|
+            orders >> {
+                order_number: item['order_number'],
+                order_status: item['order_status'],
+                orderDate: item['order_date'],
+                shipDate: item['ship_date'],
+                deliveredDate: item['delivered_date'],
+                status: item['bo_status']
+            }
+            closed_orders.update_all(order_status: "closed")
+            orders_xml = orders.to_xml(root: 'orders', skip_types: true, skip_instruct: true, dasherize: false).gsub('<orders>', "").gsub('</orders>', "")
+            update_bo_orders(orders_xml)
+        end
+    end
+
+
+    def update_bo_orders(orders_xml)
+        @xml_string = (PREFIX + orders_xml + SUFFIX).freeze
+        conn = CONNECTION.call
+        response = conn.post do |req|
+            req.url '/api/v1/orders'
+            req.headers['Content-Type'] = 'form/multipart'
+            req.body = @xml_string
+        end
+        puts response.body
+    end 
+    
+
+    # alternative method for updating orders
+   #def process_all_orders
+    #    orders = ListStatusService.new.call
+     #   orders.each do |item|
+     #       sales_order = SalesOrder.find_by(sales_order_internal_id: item['order_number'])
+      #      if sales_order.present?
+      #          sales_order.update(
+      #              order_status: item['order_status'],
+      #              check_date: item['check_date'],
+      #              previous_check_date: item['previous_check_date'],
+      #              order_date: item['order_date'],
+     #               ship_date: item['ship_date'],
+     #               delivery_date: item['delivery_date'],
+     #               delivered_date: item['delivered_date'],
+     #               quantity_fulfilled: item['quantity_fulfilled'],
+     #               order_status: item['order_status'],
+     #               ns_status: item['ns_status'],
+      #              last_modified_at: item['last_modified_at']
+    #           )
+     #       else
+     #           SalesOrder.create(
+     #               sales_order_internal_id: item['order_number'],
+     #               order_status: item['order_status'],
+    #                check_date: item['check_date'],
+    #                previous_check_date: item['previous_check_date'],
+     #               order_date: item['order_date'],
+    #                ship_date: item['ship_date'],
+     #               delivery_date: item['delivery_date'],
+     #               delivered_date: item['delivered_date'],
+     #               quantity_fulfilled: item['quantity_fulfilled'],
+     #               order_status: item['order_status'],
+     #               ns_status: item['ns_status'],
+     #               last_modified_at: item['last_modified_at']
+     #           )
+     #       end
+     #   end
+   # end
 end
