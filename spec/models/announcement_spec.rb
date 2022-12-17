@@ -2,7 +2,7 @@
 #
 # Table name: announcements
 #
-#  id                :bigint           not null, primary key
+#  id                :uuid             not null, primary key
 #  announcement_type :string
 #  description       :text
 #  name              :string

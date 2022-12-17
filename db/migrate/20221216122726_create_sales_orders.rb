@@ -5,6 +5,7 @@ class CreateSalesOrders < ActiveRecord::Migration[7.0]
       t.integer :order_number, null: false, unique: true
       t.integer :customer_id, null: false
       t.integer :sales_order_internal_id
+      t.jsonb :creation_params, null: false, default: {}
       t.datetime :check_date, null: false, default: -> { 'CURRENT_TIMESTAMP' }
       t.datetime :previous_check_date, null: false, default: -> { 'CURRENT_TIMESTAMP' }
       t.datetime :order_date, null: false, default: -> { 'CURRENT_TIMESTAMP' }

@@ -5,13 +5,15 @@
 #  id                      :uuid             not null, primary key
 #  bo_status               :integer          default(0), not null
 #  check_date              :datetime         not null
+#  creation_params         :jsonb            not null
 #  delivered_date          :datetime
 #  delivery_date           :datetime
-#  last_check_date         :datetime         not null
-#  ns_status               :integer          default(0), not null
+#  last_modified_at        :datetime         not null
+#  ns_status               :integer          default("pending"), not null
 #  order_date              :datetime         not null
 #  order_number            :integer          not null
 #  order_status            :integer          not null
+#  previous_check_date     :datetime         not null
 #  price                   :float            default(0.0), not null
 #  quantity_fulfilled      :float            default(0.0), not null
 #  ship_date               :datetime         not null
@@ -27,5 +29,11 @@ class SalesOrder < ApplicationRecord
         shipped: 2,
         delivered: 3,
         closed: 4
+    } 
+
+    enum ns_status: {
+        open: 0,
+        Missed: 1,
+        Complete: 2
     }
 end

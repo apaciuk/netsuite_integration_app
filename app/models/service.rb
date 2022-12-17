@@ -2,7 +2,7 @@
 #
 # Table name: services
 #
-#  id                  :bigint           not null, primary key
+#  id                  :uuid             not null, primary key
 #  access_token        :string
 #  access_token_secret :string
 #  auth                :text
@@ -12,7 +12,7 @@
 #  uid                 :string
 #  created_at          :datetime         not null
 #  updated_at          :datetime         not null
-#  user_id             :bigint           not null
+#  user_id             :uuid             not null
 #
 # Indexes
 #
